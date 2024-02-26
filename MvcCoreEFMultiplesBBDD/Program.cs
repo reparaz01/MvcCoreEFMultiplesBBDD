@@ -9,11 +9,11 @@ builder.Services.AddControllersWithViews();
 
 //SQL CONNECTION
 
-/*
+
 builder.Services.AddTransient<IRepositoryEmpleados, RepositoryEmpleadosSQLServer>();
 string connectionString = builder.Configuration.GetConnectionString("SqlServerHospital");
 builder.Services.AddDbContext<HospitalContext> (options => options.UseSqlServer(connectionString));
-*/
+//hola
 
 //ORACLE CONNECTION
 
@@ -29,7 +29,7 @@ builder.Services.AddTransient<IRepositoryEmpleados, RepositoryEmpleadosMySql>();
 string connectionString = 
 builder.Configuration.GetConnectionString("MySqlHospital");
 builder.Services.AddDbContextPool<HospitalContext> (options => options.UseMySql(connectionString , ServerVersion.AutoDetect(connectionString)));
-/*
+*/
 
 
 
